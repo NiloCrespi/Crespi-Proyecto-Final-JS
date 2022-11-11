@@ -1,0 +1,7 @@
+[
+    {"image":"cluster.jpg", "titulo":"Zuckerzeit", "artista":"Cluster", "anio":1974, "autor":"Ivo"},
+    {"image":"medicine.jpg", "titulo":"The Buried Life", "artista":"Medicine", "anio":1993, "autor":"Coco"},
+    {"image":"pillos.jpg", "titulo":"Viajar Lejos", "artista":"Los Pillos", "anio":1987, "autor":"Ivo"},
+    {"image":"eno.jpg", "titulo":"Another Green World", "artista":"Brian Eno", "anio":1975, "autor":"Cleo"},
+    {"image":"grosses.jpg", "titulo":"Grosses Wasser", "artista":"Cluster", "anio":1979, "autor":"Cleo"}
+]

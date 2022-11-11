@@ -1,0 +1,1854 @@
+
+@media screen and (max-width: 550px) {
+
+    body {
+        padding-bottom: 50px;
+        background-color: $colorPrincipal;
+    }
+
+    /* HEADER */
+    .header__desktop--redes {
+        display: none;
+    }
+
+    .header__desktop--menu {
+        display: none;
+    }
+
+    .header__desktop--player {
+        display: none;
+    }
+
+    .header__desktop--logo {
+        width: 100%;
+        max-width: 550px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+            a {
+                font-family: "Ink Highlight";
+                font-size: 3rem;
+                color: $colorLogo;
+            }
+    }
+    
+    .header__menu--mobile {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+		
+            ul {
+                list-style-type: none;
+                display: flex;
+                flex-flow: row;
+                justify-content: stretch;
+                align-content: center;
+                border: solid black 1px;
+                margin-bottom: 0px;
+                padding-left:0px;
+                background-color: $colorPrincipal;
+
+                    li {
+		                border: solid black 1px;
+		                width: 100%;
+		                display: flex;
+		                justify-content: center;
+                        font-size: 2rem;
+                    }
+            }
+    }
+
+    /* INDEX */
+    .index__ultNoticias--titulo {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    #index__ultNoticias--carousel {
+        display:none;
+    }
+
+    .index__ultNoticias--articulo {
+        padding: 0.5rem;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+    }
+
+    .index__ultResenas--titulo {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .index__ultResenas--articulo {
+        @include flex (flex, row);
+        padding: 0.5rem;
+
+            img {
+                width: 12rem;
+                height: auto;
+                padding: 0.5rem;
+            }
+
+            .index__ultResenas--info {
+                width: 100%;
+                padding: 0.5rem;
+                height: auto;
+                display: flex;
+                flex-direction: column;
+
+                    .index__ultResenas--autor {
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: flex-end;
+                        padding-block: 0.5rem;
+                    }
+            }
+
+    }
+
+    /* NOTICIAS */
+    .noticias__titulo {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .noticias__desktop--ultNoti {
+        display:none;
+    }
+
+    .noticias__desktop--grid {
+        display: none;
+    }
+
+    .noticias__cont--articulo {
+        padding: 0.5rem;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+    }
+
+    /* ARTICULO */
+
+    .articulo__encabezado {
+        padding: 1.75rem;
+
+            .articulo__encabezado--paratexto h2{
+                font-size: 0.9rem;
+                font-weight: 600;
+            }
+
+            .articulo__encabezado--titulo h3 {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+    
+            .articulo__encabezado--divisor {
+                margin-top: 1rem;
+                display: block;
+                border-bottom: 2px solid black;
+                width: 100px;
+            }
+
+            .articulo__encabezado--copete {
+                padding-top: 1rem;
+                font-size: 1.2rem;
+                font-weight: 400;
+            }
+
+            .articulo__encabezado--detalles {
+                p {
+                    margin: 0;
+                    font-size: 0.9rem; 
+                }
+            }
+    }
+
+    .articulo__img {
+        margin: 0;    
+            
+            img {
+                width: 100%;
+            }
+
+            .articulo__img--epigrafe {
+                p {
+                    font-size: 0.9rem; 
+                    padding-left: 1.75rem;
+                    margin: 0;
+                }
+            }
+    }
+
+    .articulo__parrafos {
+        padding-block: 1rem;
+        padding-inline: 1.75rem;
+
+            p {
+                margin-inline: 0;
+                margin-bottom: 0;
+                padding-bottom: 1rem;
+                text-align: justify;
+                font-size: 1rem;
+
+                    .articulo__parrafos--bold {
+                        font-weight: 600;
+                    }
+            }
+            
+            .articulo__media {
+                padding-bottom: 1rem;
+
+                    .articulo__media--video {
+                        width: 100%;
+                        height: 15rem;
+                    }
+
+                    .articulo__media--imagen img {
+                        width: 100%;
+                    }
+
+                    .articulo__media--epigrafe {
+                        p {
+                            font-size: 0.9rem; 
+                            margin: 0;
+                            padding-bottom: 0;
+                        }
+                    }
+            }
+    }
+    
+
+    /* RESEÑAS */
+    .resenas__titulo {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .resenas__descrip {
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    .resenas__cont--articulo {
+        display: flex;
+        flex-direction: row;
+        padding: 0.5rem;
+
+            img {
+                width: 12rem;
+                height: auto;
+                padding: 0.5rem;
+            }
+
+            .resenas__cont--info {
+                width: 100%;
+                padding: 0.5rem;
+                height: auto;
+                @include flex (flex, column);
+
+                    .resenas__cont--autor {
+                        height: 100%;
+                        @include flex (flex, column);
+                        justify-content: flex-end;
+                        padding-block: 0.5rem;
+                    }
+            }
+    }
+
+    /* ARTICULO RESEÑA */
+    .resena__paratexto h2 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 0;
+        padding-block: 1rem;
+        padding-left: 1.75rem;
+    }
+
+    .resena__encabezado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resena__contenedor--img {
+        display: flex;
+        justify-content: center; 
+        
+            img {
+                width: 100%;
+                max-width: 15rem;
+            }
+    }
+
+    .resena__contenedor--puntuacion {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+
+            .checked {
+                color: orange;
+            }
+    }
+
+    .resena__contenedor--autor {
+        padding-left: 1.75rem;
+        padding-bottom: 0.5rem;
+        margin: 0;
+    }
+
+    .resena__contenedor--detalles {
+        display: flex;
+        justify-content: start;
+        padding-left: 1.75rem;
+
+            .resena__detalles {
+                display:inline-flex;
+                flex-direction: column;
+                justify-self: center;
+                font-weight: 600;
+                padding-bottom: 1rem;
+            
+                    p {
+                        font-size: 1rem;
+                        margin: 0;
+                        padding: 0;
+                    }
+            }
+    }
+
+    .resena__parrafos {
+        padding-inline: 1.75rem;
+        padding-bottom: 1.5rem;
+
+        p {
+            margin-inline: 0;
+            margin-bottom: 0;
+            padding-bottom: 1rem;
+            text-align: justify;
+            font-size: 1rem;
+        }
+
+        .resena__media--video {
+            padding-block: 1rem;
+            margin: 0;
+
+                iframe {
+                    width: 100%;
+                    height: 15rem;
+                }
+        }
+
+        .resena__media--foto {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+                img {
+                    max-width: 550px;
+                    width: 100%;
+                }
+
+                .resena__media--epigrafe {
+                    font-size: 0.9rem;
+                }
+        }
+    }
+
+    .resena__media--player {
+        display: flex;
+        justify-content: center;
+        padding-inline: 1.75rem;
+        padding-bottom: 1rem;
+    
+            iframe {
+                max-width: 550px;
+                width: 100%;
+            }
+    }
+
+    /* AGENDA */
+    $min-width: 320px;
+    $number-of-days: 7;
+    $column-width: percentage(1/$number-of-days);
+
+    .agenda__calendario {
+        
+        h2 {
+            font-size: 2rem;
+        }
+        
+        h2,p {
+            text-align: center;
+        }
+
+        .agenda__calendario--monthText {
+            font-size: 2.5rem;
+        }
+    }
+
+    .container {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 1em;
+    }
+      
+    .row:before {
+        display: table;
+        content: " ";
+    }
+      
+    .grid-calendar {
+        min-width: $min-width;
+        
+        .row {
+            margin-right: -15px;
+            margin-left: -15px;
+            margin: 0;          
+        }
+        
+        .calendar-week .grid-cell {
+            border: 1px solid #fff;
+        }
+      
+        .calendar-week-header .grid-cell > div > div {
+            padding-bottom: 10px;
+            height: auto;
+        }
+        
+        .grid-cell {
+            display: inline-block;
+            min-height: 1px;
+            padding: 0;
+            position: relative;
+            width: $column-width;
+            font-size: 1rem;
+      
+                &.previous-month {
+                    color: #a6a6a6;
+                }
+          
+                &.next-month {
+                    background-color: #e1e1e1;
+                }
+          
+            > div {
+                display: flex;
+                justify-content: end;
+                width: 100%;
+      
+            > div {
+                height: 0;
+                padding: 50% 0;
+            }
+
+            span {
+                padding-right: 1rem;
+            }
+
+          }
+        }
+    }    
+
+    .agenda__calendario--marker {
+        font-weight: 700;
+        font-size: 2rem;
+        background-color: #7b7676f0;
+    }
+
+    .agenda__fechaSelect {
+        border: black solid 4px;
+        border-radius: 40px;
+        margin-inline: 1.5rem;
+
+            h3 {
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+    }
+
+    .agenda__fechaSelect--cardEvento {
+        padding-block: 1rem;
+    }
+
+    .agenda__fechaSelect--infoEvento {
+        padding-top: 1rem;
+    }
+
+    .agenda__fechaSelect--infoBold {
+        font-weight: 600;
+    }
+
+    .agenda__fechaSelect--imgEvento {
+        display: flex;
+        justify-content: start;
+
+            img {
+                width: 6rem;
+            }
+    }
+
+
+    /* CONTACTO */
+    .contacto__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        align-self: center;
+        background-color: $colorLogo;
+        transform: scale(1, 1); 
+        color: black ;           
+    }
+
+    .btn:hover {
+        transform: scale(1.1, 1.1);
+        transition: all 500ms;       
+        background-color: $colorLogo;
+        color: black;
+    }
+
+    .contacto__redesMob {
+        @include flex (flex, column);
+        align-items: center;
+    }
+
+    .contacto__redesMob--icons {
+        @include flex (inline-flex, row);
+        
+        .contacto__redesMob--icon {
+                padding-inline: 1rem;
+                font-size: 4rem;
+                transition: all500ms;            
+            }
+
+        .contacto__redesMob--icon:hover {
+                font-size: 4.2rem;
+        }    
+    }
+
+}
+
+@media screen and (min-width: 550px) and (max-width: 1023px) {
+    body {
+        padding-bottom: 50px;
+        background-color: $colorPrincipal;
+    }
+
+    /* HEADER */
+    .header__desktop--redes {
+        display: none;
+    }
+
+    .header__desktop--menu {
+        display: none;
+    }
+
+    .header__desktop--player {
+        display: none;
+    }
+
+    .header__desktop--logo {
+        width: 100%;
+        max-width: 1023px;
+        height: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+            a {
+                font-family: "Ink Highlight";
+                font-size: 5rem;
+                color: $colorLogo;
+            }
+    }
+    
+    .header__menu--mobile {
+		position: fixed;
+		bottom: 0;
+		width: 100%;
+        z-index: 9;
+		
+            ul {
+                list-style-type: none;
+                @include flex (flex, row);
+                justify-content: stretch;
+                width: 100%;
+                align-content: center;
+                border: solid black 1px;
+                margin-bottom: 0px;
+                padding-left:0px;
+
+                    li {
+		                border: solid black 1px;
+                        background-color: $colorPrincipal;
+                        width: 1022px;
+		                display: flex;
+		                justify-content: center;
+                        font-size: 2rem;
+                    }
+            }
+    }
+
+    /* INDEX */
+    .index__ultNoticias--titulo {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    #index__ultNoticias--carousel {
+        display:none;
+    }
+
+    .index__ultNoticias--articulo {
+        padding: 0.5rem;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+    }
+
+    .index__ultResenas--titulo {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .index__ultResenas--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        justify-items: center;
+        justify-content: center;
+        
+            .index__ultResenas--articulo {
+                @include flex (flex, column);
+
+                    .index__ultResenas--portada {
+                        justify-self: center;
+                        align-self: center;
+                        padding-bottom: 0.5rem;
+
+                            img {
+                                width: 15rem;
+                                height: auto;
+                            }
+                    }
+                
+                    .index__ultResenas--info {
+                        text-align: center;
+                    }
+
+            }
+    }
+
+    /* NOTICIAS */
+    .noticias__titulo {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .noticias__desktop--ultNoti {
+        display:none;
+    }
+
+    .noticias__desktop--grid {
+        display: none;
+    }
+
+    .noticias__cont--articulo {
+        padding: 0.5rem;
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+
+            h3 {
+                text-align: center;
+            }
+
+            p {
+                text-align: center;
+            }
+    }
+
+    /* ARTICULO */
+    .articulo__encabezado {
+        padding: 1.75rem;
+
+            .articulo__encabezado--paratexto h2{
+                font-size: 0.9rem;
+                font-weight: 600;
+            }
+
+            .articulo__encabezado--titulo h3 {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+    
+            .articulo__encabezado--divisor {
+                margin-top: 1rem;
+                display: block;
+                border-bottom: 2px solid black;
+                width: 100px;
+            }
+
+            .articulo__encabezado--copete {
+                padding-top: 1rem;
+                font-size: 1.2rem;
+                font-weight: 400;
+            }
+
+            .articulo__encabezado--detalles {
+                p {
+                    margin: 0;
+                    font-size: 0.9rem; 
+                }
+            }
+    }
+
+    .articulo__img {
+        margin: 0;    
+            
+            img {
+                width: 100%;
+            }
+
+            .articulo__img--epigrafe {
+                p {
+                    font-size: 0.9rem; 
+                    padding-left: 1.75rem;
+                    margin: 0;
+                }
+            }
+    }
+
+    .articulo__parrafos {
+        padding-block: 1rem;
+        padding-inline: 1.75rem;
+
+            p {
+                margin-inline: 0;
+                margin-bottom: 0;
+                padding-bottom: 1rem;
+                text-align: justify;
+                font-size: 1rem;
+
+                    .articulo__parrafos--bold {
+                        font-weight: 600;
+                    }
+            }
+            
+            .articulo__media {
+                padding-bottom: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                    .articulo__media--video {
+                        width: 100%;
+                        max-width: 720px;
+                        height: 15rem;
+                    }
+
+                    .articulo__media--imagen img {
+                        width: 100%;
+                    }
+
+                    .articulo__media--epigrafe {
+                        p {
+                            font-size: 0.9rem; 
+                            margin: 0;
+                            padding-bottom: 0;
+                        }
+                    }
+            }
+    }
+    
+
+    /* RESEÑAS */
+    .resenas__titulo {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .resenas__descrip {
+        display: flex;
+        justify-content: center;
+        font-size: 1rem;
+        padding: 1rem;
+        text-align: center;
+
+    }
+
+    .resenas__cont--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr; 
+        justify-items: center;
+        justify-content: center;
+        
+            .resenas__cont--articulo {
+                display: flex;
+                flex-direction: column;
+            
+                    .resenas__cont--portada {
+                        justify-self: center;
+                        align-self: center;
+                        padding-bottom: 0.5rem;
+
+                            img {
+                                width: 15rem;
+                                height: auto;
+                            }
+                    }
+                
+                    .resenas__cont--info {
+                        text-align: center;
+                    }
+            }
+    }
+
+    /* ARTICULO RESEÑA */
+    .resena__paratexto h2 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        margin-bottom: 0;
+        padding-left: 1.75rem;
+        padding-bottom: 1.2rem;
+    }
+
+    .resena__encabezado {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .resena__contenedor--img {
+        display: flex;
+        justify-content: center; 
+        
+            img {
+                width: 100%;
+                max-width: 20rem;
+            }
+    }
+
+    .resena__contenedor--puntuacion {
+        display: flex;
+        justify-content: center;
+        padding-top: 1rem;
+
+            .checked {
+                color: orange;
+            }
+    }
+
+    .resena__contenedor--autor {
+        padding-left: 1.75rem;
+        padding-bottom: 0.5rem;
+        margin: 0;
+    }
+
+    .resena__contenedor--detalles {
+        display: flex;
+        justify-content: start;
+        padding-left: 1.75rem;
+
+            .resena__detalles {
+                display:inline-flex;
+                flex-direction: column;
+                justify-self: center;
+                font-size: 1rem;
+                font-weight: 600;
+                padding-bottom: 1rem;
+            
+                    p {
+                        margin: 0;
+                        padding: 0;
+                    }
+            }
+    }
+
+    .resena__parrafos {
+        padding-inline: 1.75rem;
+        padding-bottom: 1.5rem;
+
+            p {
+                margin-inline: 0;
+                margin-bottom: 0;
+                padding-bottom: 1rem;
+                text-align: justify;
+                font-size: 1rem;
+            }
+
+            .resena__media--video {
+                display: flex;
+                justify-content: center;
+                margin: 0;
+                padding-block: 1rem;
+
+                        iframe {
+                            max-width: 550px;
+                            width: 100%;
+                            height: 315px;
+                        }
+            }
+
+            .resena__media--foto {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                    img {
+                        max-width: 550px;
+                        width: 100%;
+                    }
+            }
+
+    }
+
+    .resena__media--player {
+        display: flex;
+        justify-content: center;
+        padding-inline: 1.75rem;
+        padding-bottom: 1rem;
+    
+            iframe {
+                max-width: 550px;
+                width: 100%;
+            }
+    }
+
+    /* AGENDA */
+    $min-width: 320px;
+    $number-of-days: 7;
+    $column-width: percentage(1/$number-of-days);
+
+    .agenda__calendario {
+        
+        h2 {
+            font-size: 2rem;
+        }
+        
+        h2,p {
+            text-align: center;
+        }
+
+        .agenda__calendario--monthText {
+            font-size: 2.5rem;
+        }
+    }
+
+    .container {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 1em;
+    }
+      
+    .row:before {
+        display: table;
+        content: " ";
+    }
+      
+    .grid-calendar {
+        min-width: $min-width;
+        
+        .row {
+            margin-right: -15px;
+            margin-left: -15px;
+            margin: 0;          
+        }
+        
+        .calendar-week .grid-cell {
+            border: 1px solid #fff;
+        }
+      
+        .calendar-week-header .grid-cell > div > div {
+            padding-bottom: 10px;
+            height: auto;
+        }
+        
+        .grid-cell {
+            display: inline-block;
+            min-height: 1px;
+            padding: 0;
+            position: relative;
+            width: $column-width;
+            font-size: 1rem;
+      
+                &.previous-month {
+                    color: #a6a6a6;
+                }
+          
+                &.next-month {
+                    background-color: #e1e1e1;
+                }
+          
+            > div {
+                display: flex;
+                justify-content: end;
+                width: 100%;
+      
+            > div {
+                height: 0;
+                padding: 50% 0;
+            }
+
+            span {
+                padding-right: 1rem;
+            }
+
+          }
+        }
+    }    
+
+    .agenda__calendario--marker {
+        font-weight: 700;
+        font-size: 1rem;
+        background-color: #7b7676f0;
+    }
+
+    .agenda__fechaSelect {
+        border: black solid 4px;
+        border-radius: 40px;
+        margin-inline: 3rem;
+
+            h3 {
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+    }
+
+    .agenda__fechaSelect--cardEvento {
+        display: flex;
+        flex-direction: row wrap;
+        padding-block: 1rem;
+    }
+
+    .agenda__fechaSelect--infoEvento {
+        padding-top: 1rem;
+    }
+
+    .agenda__fechaSelect--infoBold {
+        font-weight: 600;
+    }
+
+    .agenda__fechaSelect--imgEvento {
+        display: flex;
+        justify-content: center;
+
+            img {
+                width: 9rem;
+            }
+    }
+
+    /* CONTACTO */
+    .contacto__form {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btn {
+        align-self: center;
+        background-color: $colorLogo;
+        transform: scale(1, 1); 
+        color: black ;           
+    }
+
+    .btn:hover {
+        transform: scale(1.1, 1.1);
+        transition: all 500ms;       
+        background-color: $colorLogo;
+        color: black;
+    }
+
+    .contacto__redesMob {
+        @include flex (flex, column);
+        align-items: center;
+    }
+
+    .contacto__redesMob--icons {
+        @include flex (inline-flex, row);
+        
+        .contacto__redesMob--icon {
+                padding-inline: 1rem;
+                font-size: 4rem;
+                transition: all500ms;            
+            }
+
+        .contacto__redesMob--icon:hover {
+                font-size: 4.2rem;
+        }    
+    }
+
+    /* FOOTER */
+    .footer {
+        display: none;
+    }
+    
+}
+
+@media screen and (min-width: 1024px) {
+    body {
+        background-color: $colorPrincipal;
+    }
+
+    /* HEADER */
+    .header__logo {
+        display: none;
+    }
+
+    .header__menu--mobile {
+        display: none;
+    }
+
+    .header__desktop {
+        display: grid;
+        grid-template-areas: 
+            "redes logo player"
+            "redes menu player";
+        grid-template-columns: 1fr 1fr 1fr;
+        background-color: $colorPrincipal;
+            
+            & &--redes {
+                grid-area: redes;
+                @include flex (flex, column);
+                justify-content: start;
+                padding-left: 15px;
+
+                .header__desktop--iconoRedes {
+                        font-size: 3rem;
+                        transition: all 500ms;            
+                    }
+
+                .header__desktop--iconoRedes:hover {
+                        font-size: 3.2rem;
+                }    
+
+            }
+    
+            & &--logo {
+                grid-area: logo;
+                display: flex;
+                align-content: center;
+                justify-content: center;
+                    
+                    a {
+                        color: $colorLogo
+                    }
+
+                    h1 {
+                        padding-top: 50px;
+                        text-align: center;
+                        font-family: "Ink Highlight";
+                        font-size: 5rem;
+                        transform: scale(1, 1);            
+                    }
+    
+                    h1:hover {
+                        transform: scale(1.1, 1.1);
+                        transition: all 500ms;            
+                    }
+    
+                    @font-face {
+                        font-family: Ink-Highlight;
+                        src: url(./fonts/Ink-Highlight.ttf);
+                    }            
+            }
+    
+            & &--menu {
+                grid-area: menu;
+                justify-items: center;
+                
+                    ul {
+                        list-style-type: none;
+                        display: flex;
+                        padding-inline: 1rem;
+                        
+                            a {
+                                color: $colorLogo;
+                            }
+
+                            li {
+                                padding-inline: 1.8rem;
+                                font-size: 1rem;
+                                font-family: Arial, Helvetica, sans-serif; 
+                            }
+    
+                            li:hover {
+                                font-weight: bold;
+                                text-decoration: underline;
+                            }
+                    }
+            }
+        
+            & &--player {
+                grid-area: player;
+                @include flex (flex, column);
+                justify-content: center;
+                align-items: flex-end;
+                padding-right: 1rem;
+            }
+    }
+
+    /* INDEX */
+    .index__ultNoticias--mobile {
+        display: none;
+    }
+    
+    .index__ultNoticias--titulo {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .index__ultNoticias--img {
+        opacity: 0.5;
+    }
+
+    #index__ultNoticias--carousel {
+        margin: 0;
+        padding: 0;
+    }
+
+    .index__ultNoticias--txt {
+
+            h3 {
+                font-size: 2rem;
+                font-weight: 800;
+                color: #1f1a1a;
+                text-shadow:    
+                    -1px 1px 0 $colorPrincipal,
+                    1px 1px 0 $colorPrincipal,
+                    1px -1px 0 $colorPrincipal,
+                    -1px -1px 0 $colorPrincipal;
+            }
+
+            p {
+                font-size: 1.1rem;
+                font-weight: 600;
+                color: #1f1a1a;
+                text-shadow:    
+                    -1px 1px 0 $colorPrincipal,
+                    1px 1px 0 $colorPrincipal,
+                    1px -1px 0 $colorPrincipal,
+                    -1px -1px 0 $colorPrincipal;
+            }
+    }
+
+    .index__ultResenas--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        justify-items: center;
+        justify-content: center;
+        
+            .index__ultResenas--articulo {
+                @include flex (flex, column);
+
+                    .index__ultResenas--portada {
+                        justify-self: center;
+                        align-self: center;
+                        padding-bottom: 0.5rem;
+
+                            img {
+                                width: 15rem;
+                                height: auto;
+                            }
+                    }
+                
+                    .index__ultResenas--info {
+                        text-align: center;
+                    }
+            }
+    }
+
+    /* NOTICIAS */
+    .noticias__cont--mobile {
+        display:none;
+    }
+
+    .noticias__titulo {
+        text-align: center;
+        padding: 0.5rem;
+    }
+
+    .noticias__desktop--ultNoti {
+        display: grid;
+        grid-template-areas: 
+            "imagen texto";
+        grid-template-columns: 1fr 1fr;
+        padding-block: 1rem;
+        background-color: #1f1a1a;
+        
+            .noticias__desktop--fotoNoti {
+                grid-area: imagen;
+                display: flex;
+                justify-content: center;
+
+                    img {
+                        max-width: 500px;
+                        width: 100%;
+                    }
+            }
+
+            .noticias__desktop--ultArt {
+                grid-area: texto;
+                
+                    a {
+                        color: #fff;
+                    }
+            }
+        
+    }
+
+    .noticias__desktop--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        padding-top: 4rem;
+        gap: 1rem;
+
+            .noticias__desktop--art {
+                @include flex (flex, column);
+
+                    .noticias__desktop--img {
+                        width: 100%;
+                        min-width: 340px;
+
+
+                            img {
+                                width: 100%;
+                                max-width: 200px;
+                            }
+                    }
+
+                    .noticias__desktop--text {
+                        display: flex;
+                        flex-direction: column;
+                        text-align: center;
+
+                            h3 {
+                                font-size: 1.5rem;
+                                font-weight: 500;
+                            }
+
+                    }
+            }
+    }
+
+    /* ARTICULO */
+    .articulo__encabezado {
+        padding: 1.75rem;
+
+            .articulo__encabezado--paratexto h2{
+                font-size: 0.9rem;
+                font-weight: 600;
+            }
+
+            .articulo__encabezado--titulo h3 {
+                font-size: 2rem;
+                font-weight: 700;
+            }
+    
+            .articulo__encabezado--divisor {
+                margin-top: 1rem;
+                display: block;
+                border-bottom: 2px solid black;
+                width: 100px;
+            }
+
+            .articulo__encabezado--copete {
+                padding-top: 1rem;
+                font-size: 1.2rem;
+                font-weight: 400;
+            }
+
+            .articulo__encabezado--detalles {
+                p {
+                    margin: 0;
+                    font-size: 0.9rem; 
+                }
+            }
+    }
+
+    .articulo__contenedor--img {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    
+            .articulo__img {
+                margin: 0;
+                padding-inline: 1.75rem;
+            
+                    img {
+                        width: 100%;
+                    }
+                
+                    .articulo__img--epigrafe {
+                        p {
+                            font-size: 0.9rem; 
+                            padding-left: 1.75rem;
+                            margin: 0;
+                            text-align: center;
+                        }
+                    }
+            }
+    }
+
+    .articulo__parrafos {
+        padding-block: 1rem;
+        padding-inline: 1.75rem;
+
+            p {
+                margin-inline: 0;
+                margin-bottom: 0;
+                padding-bottom: 1rem;
+                text-align: justify;
+                font-size: 1rem;
+
+                    .articulo__parrafos--bold {
+                        font-weight: 600;
+                    }
+            }
+            
+            .articulo__media {
+                padding-bottom: 1rem;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                    .articulo__media--video {
+                        width: 100%;
+                        max-width: 780px;
+                        height: 20rem;
+                    }
+
+                    .articulo__media--imagen img {
+                        width: 45rem;
+                    }
+
+                    .articulo__media--epigrafe {
+                        p {
+                            font-size: 0.9rem; 
+                            margin: 0;
+                            padding-bottom: 0;
+                        }
+                    }
+            }
+    }
+    
+    /* RESEÑAS */
+    .resenas__titulo {
+        text-align: center;
+        padding: 0.3rem;
+    }
+
+    .resenas__descrip {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1rem;
+        padding-bottom: 1.5rem;
+
+            form {
+                display: flex;
+                flex-direction: row;
+                width: 30rem;
+            }
+    }
+
+    .resenas__busq--flex {
+        border: solid black 1px;
+
+            .resenas__busq {
+                align-content: center;
+            }
+
+            .resenas__busq--searchbar {
+                justify-self: center;
+            }
+    }
+
+    .resenas__cont--grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        justify-items: center;
+        justify-content: center;
+        
+            .resenas__cont--articulo {
+                @include flex (flex, column);
+                
+                    .resenas__cont--portada {
+                        justify-self: center;
+                        align-self: center;
+                        padding-bottom: 0.5rem;
+
+                            img {
+                                width: 15rem;
+                                height: auto;
+                            }
+                    }
+                
+                    .resenas__cont--info {
+                        text-align: center;
+                    }
+            }
+    }
+
+    /* ARTICULO RESEÑA */
+    .resena__paratexto h2 {
+        font-size: 0.9rem;
+        font-weight: 600;
+        padding-left: 1.75rem;
+        padding-block: 1rem;
+        margin: 0;
+    }
+
+    .resena__grid {
+        display: grid;
+        grid-template-areas: 
+            "portada encabezado"
+            "portada puntaje";
+        grid-template-columns: 1fr 1fr;
+    
+            .resena__contenedor--img {
+                grid-area: portada;
+                display: flex;
+                justify-content: end;
+                padding-right: 3rem;
+                
+                    img {
+                        max-width: 20rem;
+                        width: 100%;
+                    }
+            }
+        
+            .resena__encabezado {
+                grid-area: encabezado;
+                padding-left: 3rem;
+                margin: 0;
+            }
+
+            .resena__contenedor--puntuacion {
+                grid-area: puntaje;
+                padding-left: 3rem;
+                display: flex;
+                align-items: center;
+                margin: 0;
+                font-size: 2.5rem;
+
+
+                    .checked {
+                        color: orange;
+                    }
+            }
+    }
+
+    .resena__contenedor--autor {
+        padding-left: 1.75rem;
+        padding-bottom: 2.5rem;
+
+            p {
+                margin: 0;
+                padding: 0;
+            }
+    }
+
+    .resena__contenedor--detalles {
+        display: flex;
+        justify-content: start;
+        padding-left: 1.75rem;
+
+            .resena__detalles {
+                display:inline-flex;
+                flex-direction: column;
+                justify-self: center;
+                font-size: 1rem;
+                font-weight: 600;
+                padding-bottom: 1rem;
+            
+                    p {
+                        margin: 0;
+                        padding: 0;
+                    }
+            }
+    }
+    
+    .resena__parrafos {
+        padding-inline: 1.75rem;
+        padding-bottom: 1.5rem;
+
+            p {
+                margin-inline: 0;
+                margin-bottom: 0;
+                padding-bottom: 1rem;
+                text-align: justify;
+                font-size: 1.2rem;
+            }
+
+            .resena__media--video {
+            display: flex;
+            justify-content: center;
+            padding-block: 1.2rem;
+                
+                    iframe {
+                        max-width: 550px;
+                        width: 100%;
+                        height: 315px;
+                    }
+            }
+
+            .resena__media--foto {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                margin: 0;
+                padding-block: 1rem;
+
+                    img {
+                        width: 50%;
+                    }
+                    
+                    .resena__media--epigrafe {
+                        font-size: 0.9rem;
+                        margin: 0;
+                        padding-bottom: 0;
+                    }
+            }
+    }
+
+    .resena__media--player {
+        display: flex;
+        justify-content: center;
+        padding-inline: 1.75rem;
+        padding-bottom: 1rem;
+    
+            iframe {
+                max-width: 550px;
+                width: 100%;
+            }
+    }
+
+
+
+
+    /* AGENDA */
+    $min-width: 320px;
+    $number-of-days: 7;
+    $column-width: percentage(1/$number-of-days);
+
+    .agenda__calendario {
+    
+        h2 {
+            font-size: 2rem;
+        }
+        
+        h2,p {
+            text-align: center;
+        }
+
+        .agenda__calendario--monthText {
+            font-size: 2.5rem;
+        }
+    }
+
+    .container {
+        max-width: 1000px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-bottom: 1em;
+    }
+      
+    .row:before {
+        display: table;
+        content: " ";
+    }
+      
+    .grid-calendar {
+        min-width: $min-width;
+        
+        .row {
+            margin-right: -15px;
+            margin-left: -15px;
+            margin: 0;          
+        }
+        
+        .calendar-week .grid-cell {
+            border: 1px solid #fff;
+        }
+      
+        .calendar-week-header .grid-cell > div > div {
+            padding-bottom: 10px;
+            height: auto;
+        }
+        
+        .grid-cell {
+            display: inline-block;
+            min-height: 1px;
+            padding: 0;
+            position: relative;
+            width: $column-width;
+            font-size: 2rem;
+      
+                &.previous-month {
+                    color: #a6a6a6;
+                }
+          
+                &.next-month {
+                    background-color: #e1e1e1;
+                }
+          
+            > div {
+                display: flex;
+                justify-content: end;
+                width: 100%;
+      
+            > div {
+                height: 0;
+                padding: 50% 0;
+            }
+            span {
+                padding-right: 1rem;
+            }
+          }
+        }
+    }    
+    .agenda__calendario--marker {
+        font-weight: 700;
+        font-size: 2rem;
+        background-color: #7b7676f0;
+    }
+    .agenda__fechaSelect {
+        border: black solid 4px;
+        border-radius: 40px;
+        margin-inline: 5rem;
+            h3 {
+                text-align: center;
+                padding-bottom: 1rem;
+            }
+    }
+    .agenda__fechaSelect--cardEvento {
+        padding-block: 1rem;
+    }
+    .agenda__fechaSelect--infoBold {
+        font-weight: 600;
+    }
+    .agenda__fechaSelect--imgEvento {
+        display: flex;
+        justify-content: end;
+            img {
+                width: 6rem;
+            }
+    }
+
+    /* CONTACTO */
+    .contacto__form {
+        display: flex;
+        flex-direction: column;
+        margin-left: 10rem;
+            
+            .contacto__form--datos {
+                margin-top: 1rem;
+                width: 100%;
+                max-width: 40rem;
+            }
+            
+            .contacto__form--mensaje {
+                margin-top: 1rem;
+                width: 100%;
+                max-width: 60rem;
+            }
+
+            .contacto__form--btn {
+                margin-top: 1rem;
+                width: 100%;
+                max-width: 10rem;
+            }
+        
+    };
+
+
+    .contacto__redesMob {
+        display: none;
+    }
+
+
+
+    /* FOOTER */
+
+    #footer {
+        margin-inline: 0;
+    }
+
+    #animacionLp {
+        height: 150px;
+        margin: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        animation-name: animacionFooter;
+        animation-duration: 10s;
+        animation-timing-function:linear;
+        animation-delay: 0;
+        animation-iteration-count:infinite;
+    }
+    
+    @keyframes animacionFooter {
+        0% {
+            transform: rotate(0deg);
+        }
+    
+        25% {
+            transform: rotate(90deg);
+        }
+    
+        50% {
+            transform: rotate(180deg);
+        }
+    
+        75% {
+            transform: rotate(270deg);
+        }
+        
+        100% {
+            transform: rotate(360deg);
+        }
+    }
+    
+
+}

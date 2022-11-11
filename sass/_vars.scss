@@ -1,0 +1,8 @@
+$colorPrincipal: #dec6e6;
+$colorLogo: #161317;
+
+
+@mixin flex ($disp, $fdir) {
+    display: $disp;
+    flex-direction: $fdir;
+}
